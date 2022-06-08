@@ -19,3 +19,5 @@
  之所以key不能为基本数据类型，则是因为基本数据类型不能调用其hashcode()方法和equals()方法，进行比较，所以HashMap集合的key只能为引用数据类型，不能为基本数据类型，可以使用基本数据类型的包装类，例如Integer Double等。
 
 当然，在HashMap存储自定义对象的时候，需要自己再自定义的对象中重写其hashCode()方法和equals方法，才能保证其存储不重复的元素，否则将存储多个重复的对象，因为每new一次，其就创建一个对象，内存地址是不同的。
+
+HashMap中key是可以为null, 只能存储一个null, 因为计算key的hash值的时候，如果key为null， 则其hash值为0
