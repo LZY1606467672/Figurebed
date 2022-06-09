@@ -14,3 +14,6 @@ java this关键字：  https://blog.csdn.net/sheng0113/article/details/122643864
 3.访问成员方法的语法：this.方法名（参数列表）
 4.this不能在类定义的外部使用，this关键字肯定要与对象相关联的，只能在类定义的方法中使用
 5.this关键字不能用在静态方法中：static方法是类方法，它先于任何的实例对象存在
+
+[Spring中Bean的实例化方式](https://blog.csdn.net/sheng0113/article/details/124359714)
+
