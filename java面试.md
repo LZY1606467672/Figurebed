@@ -5,7 +5,10 @@
 
 [Java集合：浅谈LinkedList](https://blog.csdn.net/sheng0113/article/details/122774435)
 
-java this关键字：
+[Java static关键字你了解多少？](https://blog.csdn.net/sheng0113/article/details/121507661)
+
+
+java this关键字：  https://blog.csdn.net/sheng0113/article/details/122643864
 1.this关键字可以用来访问本类的属性、方法、构造器
 2.this关键字用来区分当前类的属性和局部变量
 3.访问成员方法的语法：this.方法名（参数列表）
