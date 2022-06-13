@@ -19,3 +19,5 @@ java this关键字：  https://blog.csdn.net/sheng0113/article/details/122643864
 
 [Spring注解@Resource和@Autowired区别对比](https://www.cnblogs.com/think-in-java/p/5474740.html)
 
+[彻底理解事务的4个隔离级别 ](https://www.cnblogs.com/jycboy/p/transaction.html) (https://www.51cto.com/article/697668.html)
+
