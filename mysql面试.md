@@ -1,4 +1,7 @@
 张维鹏大佬面试题总结：https://blog.csdn.net/a745233700?type=blog
+程序员囧辉：https://joonwhee.blog.csdn.net/?type=blog
+Thinkwon：https://thinkwon.blog.csdn.net/?type=blog
+
 
 ## 1、Explain执行计划详解
 一、id
@@ -79,3 +82,8 @@ Mybatis在处理#{}时，会将sql中的#{}替换为?号，调用PreparedStateme
 Mybatis在处理${}时，就是把${}替换成变量的值。
 ${}方式一般用于传入数据库对象，如表名、列名。
 使用#{}可以有效的防止SQL注入，提高系统安全性。
+
+结论：
+#{}：相当于JDBC中的PreparedStatement；${}：是输出变量的值
+
+简单说，#{}是经过预编译的，是安全的；${}是未经过预编译的，仅仅是取变量的值，是非安全的，存在SQL注入。
