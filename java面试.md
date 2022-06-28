@@ -22,3 +22,65 @@ java this关键字：  https://blog.csdn.net/sheng0113/article/details/122643864
 [彻底理解事务的4个隔离级别 ](https://www.cnblogs.com/jycboy/p/transaction.html) (https://www.51cto.com/article/697668.html)
 
 [Spring Security实现短信验证码登录](https://www.jianshu.com/p/a7c5ee9fb998)
+
+
+## java创建对象的几种方式
+1、new关键字
+2、Class.newInstance
+这是我们运用反射创建对象时最常用的方法。Class类的newInstance使用的是类的public的无参构造器。因此也就是说使用此方法创建对象的前提是必须有public的无参构造器才行
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Person person = Person.class.newInstance();
+        System.out.println(person); // Person{name='null', age=null}
+    }
+}
+
+3、Constructor.newInstance
+本方法和Class类的newInstance方法很像，但是比它强大很多。 java.lang.relect.Constructor类里也有一个newInstance方法可以创建对象。我们可以通过这个newInstance方法调用有参数（不再必须是无参）的和私有的构造函数（不再必须是public）。
+
+
+4、Clone
+无论何时我们调用一个对象的clone方法，JVM就会创建一个新的对象，将前面的对象的内容全部拷贝进去，用clone方法创建对象并不会调用任何构造函数。 要使用clone方法，我们必须先实现Cloneable接口并复写Object的clone方法（因为Object的这个方法是protected的，你若不复写，外部也调用不了呀）。
+
+public class Person implements Cloneable {
+	...
+	// 访问权限写为public，并且返回值写为person
+    @Override
+    public Person clone() throws CloneNotSupportedException {
+        return (Person) super.clone();
+    }
+    ...
+}
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+        Person person = new Person("fsx", 18);
+        Object clone = person.clone();
+
+        System.out.println(person);
+        System.out.println(clone);
+        System.out.println(person == clone); //false
+    }
+
+}
+
+5、反序列化
+当我们序列化和反序列化一个对象，JVM会给我们创建一个单独的对象，在反序列化时，JVM创建对象并不会调用任何构造函数。
+
+为了反序列化一个对象，我们需要让我们的类实现Serializable接口。
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+        Person person = new Person("fsx", 18);
+        byte[] bytes = SerializationUtils.serialize(person);
+
+        // 字节数组：可以来自网络、可以来自文件（本处直接本地模拟）
+        Object deserPerson = SerializationUtils.deserialize(bytes);
+        System.out.println(person);
+        System.out.println(deserPerson);
+        System.out.println(person == deserPerson);
+    }
+
+}
