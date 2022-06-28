@@ -26,6 +26,7 @@ java this关键字：  https://blog.csdn.net/sheng0113/article/details/122643864
 
 ## java创建对象的几种方式
 1、new关键字
+
 2、Class.newInstance
 这是我们运用反射创建对象时最常用的方法。Class类的newInstance使用的是类的public的无参构造器。因此也就是说使用此方法创建对象的前提是必须有public的无参构造器才行
 public class Main {
@@ -84,3 +85,10 @@ public class Main {
     }
 
 }
+
+附：关于两种newInstance方法的区别？
+1、Class类位于java的lang包中，而Constructor是java反射机制的一部分
+2、Class类的newInstance只能触发无参数的构造方法创建对象，而构造器类的newInstance能触发有参数或者任意参数的构造方法来创建对象。
+3、Class类的newInstance需要其构造方法是public的或者对调用方法可见的，而构造器类的newInstance可以在特定环境下调用私有构造方法来创建对象。
+4、Class类的newInstance抛出类构造函数的异常，而构造器类的newInstance包装了一个InvocationTargetException异常。
+说明：Class类本质上调用了反射包Constructor中无参数的newInstance方法，捕获了InvocationTargetException，将构造器本身的异常抛出
