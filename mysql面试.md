@@ -1,7 +1,13 @@
 张维鹏大佬面试题总结：https://blog.csdn.net/a745233700?type=blog
+
+javaGuide:https://github.com/Snailclimb/JavaGuide/tree/master/docs/java/collection
+
 程序员囧辉：https://joonwhee.blog.csdn.net/?type=blog
+原创汇总：https://blog.csdn.net/v123411739/article/details/114808139
+
 Thinkwon：https://thinkwon.blog.csdn.net/?type=blog
 
+三分恶：https://www.cnblogs.com/three-fighter/p/14491256.html
 
 ## 1、Explain执行计划详解
 一、id
