@@ -99,3 +99,8 @@ public class Main {
 
 ### java面试博客：
 ##### [两年Java开发工作经验面试总结](https://blog.csdn.net/a754315344/article/details/105384589)
+##### [骆昊Java面试](https://blog.csdn.net/jackfrued/article/details/44921941)
+##### [Java 最常见的 200+ 面试题：面试必备](https://blog.csdn.net/sufu1065/article/details/88051083)
+##### [两年Java开发工作经验面试总结 囧辉](https://joonwhee.blog.csdn.net/article/details/71437307)
+##### [外包公司能去吗？进了外包如何翻盘？](https://blog.csdn.net/v123411739/article/details/124580750)
+##### [程序员在外包公司工作怎么样？](https://blog.csdn.net/fms5201314/article/details/108302103)
