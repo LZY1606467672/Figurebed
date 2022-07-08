@@ -94,3 +94,8 @@ public class Main {
 3、Class类的newInstance需要其构造方法是public的或者对调用方法可见的，而构造器类的newInstance可以在特定环境下调用私有构造方法来创建对象。
 4、Class类的newInstance抛出类构造函数的异常，而构造器类的newInstance包装了一个InvocationTargetException异常。
 说明：Class类本质上调用了反射包Constructor中无参数的newInstance方法，捕获了InvocationTargetException，将构造器本身的异常抛出
+
+
+
+### java面试博客：
+##### [两年Java开发工作经验面试总结](https://blog.csdn.net/a754315344/article/details/105384589)
