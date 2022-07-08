@@ -104,3 +104,6 @@ public class Main {
 ##### [两年Java开发工作经验面试总结 囧辉](https://joonwhee.blog.csdn.net/article/details/71437307)
 ##### [外包公司能去吗？进了外包如何翻盘？](https://blog.csdn.net/v123411739/article/details/124580750)
 ##### [程序员在外包公司工作怎么样？](https://blog.csdn.net/fms5201314/article/details/108302103)
+##### [java面试感受，越来越难](https://zhuanlan.zhihu.com/p/68829038)
+
+
